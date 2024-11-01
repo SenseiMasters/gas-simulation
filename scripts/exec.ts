@@ -1,8 +1,8 @@
-import { sorting } from "./soring";
+import { sorting } from "./sorting";
 
 async function main() {
-  const inputsSize = 30;
-  const requestsSize = 100;
+  const inputsSize = 10;
+  const requestsSize = 10;
   console.log("=================== BubbleSort ==================");
   await sorting("BubbleSort", requestsSize, inputsSize);
   console.log("=================== MergeSort ==================");

@@ -33,5 +33,5 @@ export async function sorting(
   for (let i = 0; i < requestsNum; i++) {
     transactions.push(requestSorting(sender, provider, simulation));
   }
-  await timing(transactions, gas, `${contractName} sort duration`);
+  await timing(provider, transactions, gas, `${contractName} sort duration`);
 }
